@@ -1,10 +1,11 @@
 import type { NextPage } from 'next'
-import Person from '../component/Person/Person'
 import Header from '../component/header/Header'
 import { ThemeProvider } from "styled-components";
 import { GlobalStyles } from '../component/globalStyles';
 import { darkTheme, lightTheme } from '../component/theme';
 import { useSelector } from 'react-redux';
+import data from '../component/Project/data'
+import Projects from '../component/Project/Projects';
 
 const Home: NextPage = () => {
   // @ts-ignore
@@ -13,7 +14,7 @@ const Home: NextPage = () => {
     <ThemeProvider theme={theme ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Header />
-      <Person />
+      <Projects data={data} />
     </ThemeProvider>
   </div>
   )

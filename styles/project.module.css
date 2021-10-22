@@ -1,0 +1,41 @@
+.profile {
+    position: relative;
+    margin: 10px 10px;
+    text-align: center;
+    max-width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.popIcon {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    border-radius: 50%;
+    width: 30px;
+    border: 1px solid black
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 33.33333%;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.image {
+    transition: all 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        flex-direction: column;
+    }
+  }
+
