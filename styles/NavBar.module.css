@@ -1,0 +1,65 @@
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, #ffafbd, #ffc3a0);
+  padding: 1.25rem;
+  position: sticky;
+  top: 0rem;
+  min-width: 100%;
+}
+
+.nav {
+  display: grid;
+  grid-auto-flow: column;
+  position: relative;
+}
+
+.ul {
+  font-weight: 700;
+  grid-auto-flow: column;
+  display: block;
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
+}
+
+.ul_small {
+  display: none;
+  grid-auto-flow: column;
+  font-weight: 700;
+
+  @media (min-width: 768px) {
+    display: grid;
+  }
+}
+
+.p {
+  cursor: pointer;
+  padding-top: 1.25rem;
+}
+
+.p:hover {
+  text-decoration: underline;
+}
+
+.button {
+  width: 0.5rem;
+  height: 0.5rem;
+  position: absolute;
+  right: 2rem;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.svg {
+    color: rgba(82, 82, 91);
+    width: 1.5rem;
+    height: 1.5rem;
+}
