@@ -8,7 +8,7 @@ const GitHub = 'https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF
 const Instagram = 'https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png'
 const name = "Ankur Ahir"
 const bio = "hello world"
-const textArray = ['NodeJS', 'React', 'Angular', 'NextJS', 'SpringBoot', 'Git']
+const textArray = ['NodeJS', 'React', 'Angular', 'NextJS', 'Git', 'Python', 'Gradle', 'CSS']
 
 const Person  = () => {
     const [index, setIndex] = useState(0)

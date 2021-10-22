@@ -1,13 +1,14 @@
 .intro {
-    font-size: 6rem;
-    line-height: 7rem;
-    padding: 15px 30px;
-    margin-bottom: 50px;
+  font-family: 'Montserrat';
+  font-size: 6rem;
+  line-height: 7rem;
+  padding: 15px 30px;
+  margin-bottom: 50px;
 }
 
-@media screen and (max-width: 680px) {
-    .intro {
-        font-size: 2.5rem;
-        line-height: 4rem;
-    }
+@media screen and (max-width: 1000px) {
+  .intro {
+    font-size: 2.5rem;
+    line-height: 4rem;
   }
+}
