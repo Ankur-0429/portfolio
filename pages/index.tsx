@@ -6,6 +6,7 @@ import { darkTheme, lightTheme } from '../component/theme';
 import { useSelector } from 'react-redux';
 import data from '../component/Project/data'
 import Projects from '../component/Project/Projects';
+import Person from '../component/Person/Person';
 
 const Home: NextPage = () => {
   // @ts-ignore
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
     <ThemeProvider theme={theme ? lightTheme : darkTheme}>
       <GlobalStyles />
       <Header />
+      <Person />
       <Projects data={data} />
     </ThemeProvider>
   </div>
