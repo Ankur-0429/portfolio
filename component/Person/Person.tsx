@@ -8,9 +8,13 @@ const GitHub = 'https://pbs.twimg.com/profile_images/1414990564408262661/r6YemvF
 const Instagram = 'https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-512.png'
 const name = "Ankur Ahir"
 const bio = "hello world"
-const textArray = ['NodeJS', 'React', 'Angular', 'NextJS', 'Git', 'Python', 'Gradle', 'CSS']
+const textArray = ['NodeJS', 'React', 'Angular', 'NextJS', 'Python', 'Gradle', 'CSS', 'Software']
+import { useSelector } from 'react-redux';
+
 
 const Person  = () => {
+    // @ts-ignore
+    const theme = useSelector(state=>state.swapTheme)
     const [index, setIndex] = useState(0)
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -19,7 +23,9 @@ const Person  = () => {
         return () => clearTimeout(timer);
     });
     return (<>
-        <h1 className={styles.intro}>Hey, <br/>I'm Ankur <br/>{textArray[index]} developer</h1>
+       
+        <h1 className={styles.intro}>Hi, <br/>I'm Ankur, <br/>{textArray[index]} developer</h1>
+       
     </>)
 }
 

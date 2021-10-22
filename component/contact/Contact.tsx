@@ -1,9 +1,13 @@
 import styles from '../../styles/contact.module.css'
 import 'font-awesome/css/font-awesome.min.css';
+import { useSelector } from 'react-redux';
+import colors from '../utils/globals';
 
 const contact = () => {
+    // @ts-ignore
+    const theme = useSelector(state=>state.swapTheme)
     return (<main className={styles.main}>
-        <div className={styles.contactContainer}>
+        <div className={styles.contactContainer} style={{backgroundColor: `${theme? colors.white : colors.darkGrey}`}}>
             <div className={styles.contactInfo}>
                 <h4>Contact</h4>
                 <div className={styles.iconText}>
@@ -11,21 +15,32 @@ const contact = () => {
                     <span>(916)-846-8959</span>
                 </div>
                 <div className={styles.iconText}>
-                    <i className="fa fa-envelope" aria-hidden="true"></i>
+                    <i className="fa fa-envelope" aria-hidden="true" style={{fontSize: '1.7rem'}}></i>
                     <span>ahir.ankur0429@gmail.com</span>
                 </div>
                 <div className={styles.iconText}>
-                    <i className="fa fa-map-marker" aria-hidden="true"></i>
+                    <i className="fa fa-map-marker" aria-hidden="true" style={{paddingLeft: '5px'}}></i>
                     <span>Santa Cruz, CA</span>
                 </div>
                 <div className={styles.socialMedia}>
                     <a href="#" className={styles.iconCircle}>
-                        <i className={styles.icon}></i>
+                        <i className="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" className={styles.iconCircle}>
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" className={styles.iconCircle}>
+                        <i className="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
             <form className={styles.form}>
-                <p>test</p>
+                <div className={styles.colTwo}>
+                    <div className={styles.formGroup}>
+                        <label>First Name</label>
+                        <input type="text" />
+                    </div>
+                </div>
             </form>
         </div>
     </main>)

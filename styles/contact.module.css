@@ -1,6 +1,6 @@
 .contactContainer {
     border-radius: 3px;
-    border: 1px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
     display: flex;
     flex-direction: row;
     border-radius: 3px;
@@ -38,19 +38,50 @@
 }
 
 .iconText i {
-    font-size: 2.2rem;
+    font-size: 2rem;
     margin-right: 2rem;
     flex: 0 0 35px;
+    margin-bottom: 2rem;
+    color: #EAE7FA;
 }
 
 .iconText span {
     font-size: 1.3rem;
     font-weight: 300;
+    margin-bottom: 2rem;
+    padding-right: 10px;
 }
+
+.socialMedia {
+    display: flex;
+    width: 50%;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    justify-content: space-between;
+}
+
+.iconCircle {
+    flex: 0 1 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.iconCircle:hover {
+    background: #FD49A0;
+}
+
+
 
 @media screen and (max-width: 600px) {
     .iconText span {
         font-size: 1rem;
         font-weight: 200;
+    }
+    .contactContainer {
+        display: block;
     }
   }
