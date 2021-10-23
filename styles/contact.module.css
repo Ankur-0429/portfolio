@@ -98,6 +98,7 @@
 }
 
 .formGroup textarea {
+    resize: none;
     height: 150px;
     padding: 15px;
     padding-left: 10px;
@@ -108,7 +109,13 @@
     transition: 0.3s ease-in-out;
 }
 
-.formGroup input[type="text"]:focus, .formGroup input[type="email"]:focus, .formGroup textarea:focus {
+.formGroup textarea:focus {
+    outline: none;
+    background: transparent;
+    border: 3px solid #FD49A0;
+}
+
+.formGroup input[type="text"]:focus, .formGroup input[type="email"]:focus {
     outline: none;
     background: transparent;
     border-bottom: 3px solid #FD49A0;

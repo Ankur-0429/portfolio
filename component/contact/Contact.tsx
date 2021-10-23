@@ -2,12 +2,48 @@ import styles from '../../styles/contact.module.css'
 import 'font-awesome/css/font-awesome.min.css';
 import { useSelector } from 'react-redux';
 import colors from '../utils/globals';
+import { useState } from 'react';
 
 const contact = () => {
     // @ts-ignore
-    const theme = useSelector(state=>state.swapTheme)
+    const theme = useSelector(state => state.swapTheme)
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
+    const [message, setMessage] = useState('')
+    const [submitted, setSubmitted] = useState(false)
+
+    const handleSubmit = (e: Event) => {
+        e.preventDefault()
+        setSubmitted(true)
+        let data = {
+            name,
+            email,
+            subject,
+            message
+        }
+        fetch('/api/contact', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json, text/plain, */*',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        }).then((res) => {
+            if (res.status === 200) {
+                console.log('test')
+                setSubmitted(true)
+                setName('')
+                setEmail('')
+                setSubject('')
+                setMessage('')
+            }
+        })
+    }
+
     return (<main className={styles.main}>
-        <div className={styles.contactContainer} style={{backgroundColor: `${theme? colors.white : colors.darkGrey}`}}>
+        <div className={styles.contactContainer} style={{ backgroundColor: `${theme ? colors.white : colors.darkGrey}` }}>
             <div className={styles.contactInfo}>
                 <h4>Contact</h4>
                 <div className={styles.iconText}>
@@ -15,11 +51,11 @@ const contact = () => {
                     <span>(916)-846-8959</span>
                 </div>
                 <div className={styles.iconText}>
-                    <i className="fa fa-envelope" aria-hidden="true" style={{fontSize: '1.7rem'}}></i>
+                    <i className="fa fa-envelope" aria-hidden="true" style={{ fontSize: '1.7rem' }}></i>
                     <span>ahir.ankur0429@gmail.com</span>
                 </div>
                 <div className={styles.iconText}>
-                    <i className="fa fa-map-marker" aria-hidden="true" style={{paddingLeft: '5px'}}></i>
+                    <i className="fa fa-map-marker" aria-hidden="true" style={{ paddingLeft: '5px' }}></i>
                     <span>Santa Cruz, CA</span>
                 </div>
                 <div className={styles.socialMedia}>
@@ -34,25 +70,29 @@ const contact = () => {
                     </a>
                 </div>
             </div>
-            <form className={styles.form}>
+            {/* @ts-ignore */}
+            <form className={styles.form} onSubmit={handleSubmit} noValidate>
                 <div className={styles.colTwo}>
                     <div className={styles.formGroup}>
                         <label>Name </label>
-                        <input type="text" />
+                        <input type="text" onChange={(e) => { setName(e.target.value) }} value={name} />
                     </div>
                     <div className={styles.formGroup}>
                         <label>Email </label>
-                        <input type="email" />
+                        <input type="email" onChange={(e) => { setEmail(e.target.value) }} value={email} />
                     </div>
                     <div className={styles.formGroup}>
-                        <label style={{paddingRight: '48px'}}>Subject</label>
-                        <input type="text" />
+                        <label style={{ paddingRight: '48px' }}>Subject</label>
+                        <input type="text" onChange={(e) => { setSubject(e.target.value) }} value={subject} />
                     </div>
                 </div>
                 <div className={styles.formGroup}>
-                        <label style={{paddingRight: '48px'}}>Message</label>
-                        <textarea />
-                    </div>
+                    <label style={{ paddingRight: '48px' }}>Message</label>
+                    <textarea onChange={(e) => { setMessage(e.target.value) }} value={message} />
+                </div>
+                <button type="submit">
+                    Submit
+                </button>
             </form>
         </div>
     </main>)
