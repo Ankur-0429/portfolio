@@ -1,4 +1,5 @@
 import styles from '../../styles/contact.module.css'
+import buttonStyles from '../../styles/contact.module.scss'
 import 'font-awesome/css/font-awesome.min.css';
 import { useSelector } from 'react-redux';
 import colors from '../utils/globals';
@@ -13,16 +14,22 @@ const contact = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
+    const [animation, setAnimation] = useState(`${buttonStyles.subButton}`)
 
     const handleSubmit = (e: Event) => {
         e.preventDefault()
         setSubmitted(true)
+
         let data = {
             name,
             email,
             subject,
             message
         }
+
+        let temp = animation
+        setAnimation(animation + ` ${buttonStyles.loading}`)
+    
         fetch('/api/contact', {
             method: 'POST',
             headers: {
@@ -33,11 +40,17 @@ const contact = () => {
         }).then((res) => {
             if (res.status === 200) {
                 console.log('test')
-                setSubmitted(true)
                 setName('')
                 setEmail('')
                 setSubject('')
                 setMessage('')
+                setSubmitted(false)
+                setTimeout(() => {
+                    setAnimation(temp + ` ${buttonStyles.ready}`)
+                }, 1000);
+                setTimeout(() => {
+                    setAnimation(temp)
+                }, 2000); 
             }
         })
     }
@@ -90,9 +103,11 @@ const contact = () => {
                     <label style={{ paddingRight: '48px' }}>Message</label>
                     <textarea onChange={(e) => { setMessage(e.target.value) }} value={message} />
                 </div>
-                <button type="submit">
-                    Submit
-                </button>
+                <div className={buttonStyles.subBody}>
+                    <button type="submit" className={animation}>
+                        Submit
+                    </button>
+                </div>
             </form>
         </div>
     </main>)
