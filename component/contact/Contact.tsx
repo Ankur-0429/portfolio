@@ -37,10 +37,22 @@ const contact = () => {
             <form className={styles.form}>
                 <div className={styles.colTwo}>
                     <div className={styles.formGroup}>
-                        <label>First Name</label>
+                        <label>Name </label>
+                        <input type="text" />
+                    </div>
+                    <div className={styles.formGroup}>
+                        <label>Email </label>
+                        <input type="email" />
+                    </div>
+                    <div className={styles.formGroup}>
+                        <label style={{paddingRight: '48px'}}>Subject</label>
                         <input type="text" />
                     </div>
                 </div>
+                <div className={styles.formGroup}>
+                        <label style={{paddingRight: '48px'}}>Message</label>
+                        <textarea />
+                    </div>
             </form>
         </div>
     </main>)
