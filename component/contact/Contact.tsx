@@ -71,13 +71,13 @@ const contact = () => {
                     <span>Santa Cruz, CA</span>
                 </div>
                 <div className={styles.socialMedia}>
-                    <a href="#" className={styles.iconCircle}>
+                    <a href="https://github.com/Ankur-0429" target="_blank" className={styles.iconCircle}>
                         <i className="fa fa-github" aria-hidden="true"></i>
                     </a>
-                    <a href="#" className={styles.iconCircle}>
+                    <a href="https://www.linkedin.com/in/ankur-ahir-93b041211/" target="_blank" className={styles.iconCircle}>
                         <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
-                    <a href="#" className={styles.iconCircle}>
+                    <a href="https://www.instagram.com/ankur_ahir88/" target="_blank" className={styles.iconCircle}>
                         <i className="fa fa-instagram" aria-hidden="true"></i>
                     </a>
                 </div>
