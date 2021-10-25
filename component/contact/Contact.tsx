@@ -49,7 +49,7 @@ const contact = () => {
                 }, 1000);
                 setTimeout(() => {
                     setAnimation(temp)
-                }, 2000); 
+                }, 3000); 
             }
         })
     }

@@ -106,7 +106,7 @@
     70% {
         margin:0;
         width:7.25rem;
-        background-color:#fff;
+        background-color: transparent;
         transform:scale(1.1,1.1);
     }
 
@@ -114,7 +114,7 @@
         margin:0;
         width:7rem;
         border-color:#8cce1e;
-        background-color:#fff;
+        background-color:transparent;
     }
 
 }
@@ -156,7 +156,7 @@
     width:7rem;
     color:#5585ff;
     border:2px solid #5585ff;
-    background-color:transparent;
+    background-color: transparent;
     cursor:pointer;
     line-height:2;
     margin:0;
@@ -171,13 +171,15 @@
         transform:scale(.9,.9);
     }
 
+    &:before {
+        background-color: white;
+    }
+
     &:before,
     &:after {
         position:absolute;
         opacity:0;
-
         border-radius:50%;
-        background-color:#fff;
         top:50%;
         left:50%;
         margin-top:-1.125rem;
@@ -207,6 +209,7 @@
         text-indent:0;
         color:transparent;
         background-color:#5585ff;
+        background-color: transparent;
         animation:button-ready .333s forwards;
     }
 

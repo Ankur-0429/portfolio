@@ -16,6 +16,36 @@ const data = [
         image: '/pathfinder.jpg',
         url: 'https://astaralgorithm.ankurahir.repl.co/',
         detail: 'my Details'
+    },
+    {
+        name: 'Project 5',
+        image: '/pathfinder.jpg',
+        url: 'https://astaralgorithm.ankurahir.repl.co/',
+        detail: 'my Details'
+    },
+    {
+        name: 'Project 5',
+        image: '/pathfinder.jpg',
+        url: 'https://astaralgorithm.ankurahir.repl.co/',
+        detail: 'my Details'
+    },
+    {
+        name: 'Project 5',
+        image: '/pathfinder.jpg',
+        url: 'https://astaralgorithm.ankurahir.repl.co/',
+        detail: 'my Details'
+    },
+    {
+        name: 'Project 5',
+        image: '/pathfinder.jpg',
+        url: 'https://astaralgorithm.ankurahir.repl.co/',
+        detail: 'my Details'
+    },
+    {
+        name: 'Project 5',
+        image: '/pathfinder.jpg',
+        url: 'https://astaralgorithm.ankurahir.repl.co/',
+        detail: 'my Details'
     }
 ]
 
