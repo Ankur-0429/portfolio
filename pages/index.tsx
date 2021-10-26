@@ -10,12 +10,13 @@ import Person from '../component/Person/Person';
 import Contact from '../component/contact/Contact';
 
 const Home: NextPage = () => {
+
   // @ts-ignore
   const theme = useSelector(state => state.swapTheme)
   return (<div>
     <ThemeProvider theme={theme ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <div style={{fontFamily: 'Roboto'}}>
+      <div style={{ fontFamily: 'Roboto' }}>
         <Header />
         <Person />
         <Projects data={data} />

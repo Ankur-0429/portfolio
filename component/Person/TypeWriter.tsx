@@ -1,4 +1,3 @@
-// @ts-ignore
 import TypeWriterEffect from 'typewriter-effect';
 
 const textArray = ['NodeJS', 'React', 'Angular', 'NextJS', 'TypeScript', 'Python', 'Gradle', 'Kubernetes', 'SpringBoot', 'CSS']

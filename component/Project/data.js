@@ -1,51 +1,21 @@
 const data = [
     {
-        name: 'Project 4',
+        name: 'AStar',
         image: '/pathfinder.jpg',
         url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
+        detail: 'Visualizes the AStar pathfinding algorithm'
     },
     {
-        name: 'Project 1',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
+        name: 'DiscordBot',
+        image: '/discord.jfif',
+        url: 'https://github.com/Ankur-0429/DiscordBot',
+        detail: 'Discord bot for managing servers on scale'
     },
     {
-        name: 'Project 5',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
-    },
-    {
-        name: 'Project 5',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
-    },
-    {
-        name: 'Project 5',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
-    },
-    {
-        name: 'Project 5',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
-    },
-    {
-        name: 'Project 5',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
-    },
-    {
-        name: 'Project 5',
-        image: '/pathfinder.jpg',
-        url: 'https://astaralgorithm.ankurahir.repl.co/',
-        detail: 'my Details'
+        name: 'Stock App',
+        image: '/Stock.jpg',
+        url: 'https://github.com/Ankur-0429/stock-app',
+        detail: 'Charts recent stock detail using Express, nodeJS, and the Yahoo Finance API'
     }
 ]
 

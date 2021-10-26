@@ -5,9 +5,13 @@ import TypeWriter from './TypeWriter';
 
 const Person = () => {
     return (<>
-        <h1 className={`${styles.intro}`}>
-            Hi,<br/>I'm Ankur,<br/> <TypeWriter/>Developer
-        </h1>
+        <div className={styles.diagonalBox}>
+            <div className={styles.content}>
+                <h1 className={`${styles.intro}`}>
+                    Hi,<br />I'm Ankur,<br /> <TypeWriter />Developer
+                </h1>
+            </div>
+        </div>
     </>)
 }
 

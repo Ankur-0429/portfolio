@@ -54,7 +54,7 @@ const contact = () => {
         })
     }
 
-    return (<main className={styles.main}>
+    return (<main className={styles.main} id="contacts">
         <div className={styles.contactContainer} style={{ backgroundColor: `${theme ? colors.white : colors.darkGrey}` }}>
             <div className={styles.contactInfo}>
                 <h4>Contact</h4>

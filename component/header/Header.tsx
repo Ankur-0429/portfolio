@@ -9,13 +9,12 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
         <div className={styles.logo}>
-            <Image src={image} alt="logo" />
+            <Image src={image} alt="logo"/>
         </div>
         <nav>
             <ul className={styles.navLink}>
-                <div><Link href="#">About</Link></div>
-                <div><Link href="#">Projects</Link></div>
-                <div><Link href="#">Contact</Link></div>
+                <div><Link href="#projects">Projects</Link></div>
+                <div><Link href="#contacts">Contact</Link></div>
             </ul>
         </nav>
         <ToggleSwitch />
