@@ -13,7 +13,7 @@ const data = [
     },
     {
         name: 'Stock App',
-        image: '/Stock.jpg',
+        image: '/stock.jpg',
         url: 'https://github.com/Ankur-0429/stock-app',
         detail: 'Charts recent stock detail using Express, nodeJS, and the Yahoo Finance API'
     }
