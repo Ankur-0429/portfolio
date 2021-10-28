@@ -4,14 +4,14 @@ import { Parallax } from 'react-scroll-parallax';
 
 const projects = ({ data }: any) => {
     return (<>
-        <div style={{ width: '50%', marginBottom: '30px' }} className={styles.title}>
-            <Parallax x={[50,50]} y={[0, 0]} tagInner="h1">
+        <div style={{ width: '100%', marginBottom: '30px' }} className={styles.title}>
+            <Parallax x={[0,0]} y={[0, 0]} tagInner="h1">
                 <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'<h1>'}</h1>
                 <h1 id="projects">
                     My Projects
                 </h1>
-                <div style={{ width: '30%'}}>
-                    <Parallax x={[300, 300]} tagInner="h1">
+                <div style={{width: '15%'}}>
+                    <Parallax x={[570, 570]} tagInner="h1">
                         <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'</h1>'}</h1>
                     </Parallax>
                 </div>
