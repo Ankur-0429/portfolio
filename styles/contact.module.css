@@ -15,7 +15,7 @@
 
 .contactInfo {
     border-radius: 3px;
-    background-color: #5904C2;
+    background-image: linear-gradient(45deg, #eaafc8, #654ea3);
     color: white;
     flex: 0 1 40%;
     display: flex;
@@ -112,7 +112,7 @@
 .formGroup textarea:focus {
     outline: none;
     background: transparent;
-    border: 3px solid #FD49A0;
+    border: 2px solid #FD49A0;
 }
 
 .formGroup input[type="text"]:focus, .formGroup input[type="email"]:focus {
