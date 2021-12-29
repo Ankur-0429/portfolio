@@ -23,7 +23,7 @@ export default function Navbar() {
             <Parallax x={[0, 0]} y={[0, 0]} tagInner="h1">
                 <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'<h1>'}</h1>
                 <h1 id="projects">
-                    Recycling Mobile App
+                    RecycleMe
                 </h1>
                 <div style={{ width: '15%' }}>
                     <Parallax x={[630, 630]} tagInner="h1">
@@ -45,7 +45,7 @@ export default function Navbar() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div style={{ overflow: 'hidden', borderRadius: 10 }}>
-                    <Image src={`/greenday_maps_screen${color ? "light" : ""}.jpg`} layout="fixed" objectFit="cover" width={300} height={600} />
+                    <Image src={`/greenday_maps_screen${color ? "light" : ""}.jpg`} layout="fixed" objectFit="cover" width={200} height={422} />
                 </div>
                 <div style={{ width: 50, height: 100, backgroundColor: theme ? colors.white : colors.darkGrey, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 5px 5px 0px', marginTop: 10, borderRadius: 5, display: 'flex', flexDirection: 'column', justifyContent: 'space-around', textAlign: 'center', marginLeft: 10 }}>
 
@@ -80,7 +80,7 @@ export default function Navbar() {
                     </button>
                 </div>
                 <div style={{ overflow: 'hidden', borderRadius: 10 }}>
-                    <Image src={`/greenday_home_screen${color ? "light" : ""}.jpg`} layout="fixed" objectFit="cover" width={300} height={600} />
+                    <Image src={`/greenday_home_screen${color ? "light" : ""}.jpg`} layout="fixed" objectFit="cover" width={200} height={422} />
                 </div>
             </div>
             <div style={{ overflow: 'hidden', height: 300, width: 500, backgroundColor: `${theme ? colors.white : colors.darkGrey}`, padding: 20, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 5px 5px 0px', marginBottom: 20 }}>
@@ -105,7 +105,7 @@ export default function Navbar() {
             </div>
             <div style={{ display: 'flex', flexDirection: 'row' }}>
                 <div style={{ overflow: 'hidden', borderRadius: 10 }}>
-                    <Image src={`/greenday_details_screen${color ? "light" : ""}.jpg`} layout="fixed" objectFit="cover" width={300} height={600} />
+                    <Image src={`/greenday_details_screen${color ? "light" : ""}.jpg`} layout="fixed" objectFit="cover" width={200} height={422} />
                 </div>
                 <div style={{ width: 50, height: 100, backgroundColor: theme ? colors.white : colors.darkGrey, boxShadow: 'rgba(100, 100, 111, 0.2) 0px 5px 5px 0px', marginTop: 10, borderRadius: 5, display: 'flex', flexDirection: 'column', justifyContent: 'space-around', textAlign: 'center', marginLeft: 10 }}>
 

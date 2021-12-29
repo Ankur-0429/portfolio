@@ -8,7 +8,7 @@ const projects = ({ data }: any) => {
             <Parallax x={[0,0]} y={[0, 0]} tagInner="h1">
                 <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'<h1>'}</h1>
                 <h1 id="projects">
-                    Other Projects
+                    Projects
                 </h1>
                 <div style={{width: '15%'}}>
                     <Parallax x={[630, 630]} tagInner="h1">

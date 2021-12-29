@@ -25,7 +25,7 @@ const contact = () => {
             subject,
             message
         }
-    
+
         fetch('/api/contact', {
             method: 'POST',
             headers: {
@@ -49,16 +49,22 @@ const contact = () => {
             <div className={styles.contactInfo}>
                 <h4>Contact</h4>
                 <div className={styles.iconText}>
-                    <i className="fa fa-phone" aria-hidden="true"></i>
-                    <span>(916)-846-8959</span>
+                    <a href='tel:9168468959'>
+                        <i className="fa fa-phone" aria-hidden="true"></i>
+                        <span>(916)-846-8959</span>
+                    </a>
                 </div>
                 <div className={styles.iconText}>
-                    <i className="fa fa-envelope" aria-hidden="true" style={{ fontSize: '1.7rem' }}></i>
-                    <span>ahir.ankur0429@gmail.com</span>
+                    <a href='mailto:ahir.ankur0429@gmail.com'>
+                        <i className="fa fa-envelope" aria-hidden="true" style={{ fontSize: '1.7rem' }}></i>
+                        <span>ahir.ankur0429</span>
+                    </a>
                 </div>
                 <div className={styles.iconText}>
-                    <i className="fa fa-map-marker" aria-hidden="true" style={{ paddingLeft: '5px' }}></i>
-                    <span>Santa Cruz, CA</span>
+                    <a href='https://www.google.com/maps/search/?api=1&query=36.9759548,-122.0824994'>
+                        <i className="fa fa-map-marker" aria-hidden="true" style={{ paddingLeft: '5px' }}></i>
+                        <span>Santa Cruz, CA</span>
+                    </a>
                 </div>
                 <div className={styles.socialMedia}>
                     <a href="https://github.com/Ankur-0429" target="_blank" className={styles.iconCircle}>
@@ -92,9 +98,9 @@ const contact = () => {
                     <label style={{ paddingRight: '48px' }}>Message</label>
                     <textarea onChange={(e) => { setMessage(e.target.value) }} value={message} />
                 </div>
-                <div style={{width: 90, marginLeft: 'auto', marginRight: 10}}>
+                <div style={{ width: 90, marginLeft: 'auto', marginRight: 10 }}>
                     <button type="submit">
-                        <div style={{color: 'white', backgroundColor: '#5585ff', borderRadius: 10, width: 90, paddingTop: 5, paddingBottom: 5, paddingLeft: 20, paddingRight: 20}}>
+                        <div style={{ color: 'white', backgroundColor: '#5585ff', borderRadius: 10, width: 90, paddingTop: 5, paddingBottom: 5, paddingLeft: 20, paddingRight: 20 }}>
                             Submit
                         </div>
                     </button>

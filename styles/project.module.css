@@ -1,6 +1,6 @@
 .profile {
     position: relative;
-    margin: 10px 30px;
+    margin: 10px 10px;
     text-align: center;
     border-radius: 3%;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
@@ -12,7 +12,7 @@
 }
 
 .detail {
-    max-width: 300px;
+    max-width: 250px;
 }
 
 .title {
