@@ -17,6 +17,18 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <meta charSet="UTF-8" />
+
+          <link rel="icon" href="/favicon.ico" />
+
+          <noscript>
+            {/*
+              Here we ignore the following recommendation to solve possible SSR problems with noscript browsers/visitors
+              https://nextjs.org/docs/messages/no-css-tags
+            */}
+            {/* eslint-disable-next-line @next/next/no-css-tags */}
+            <link href="./styles/aos-noscript.css" rel="stylesheet" />
+          </noscript>
           <link
             href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&display=swap"
             rel="stylesheet"
@@ -31,6 +43,7 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
+          <noscript>You need to enable JavaScript to run this app.</noscript>
           <Main />
           <NextScript />
         </body>

@@ -1,5 +1,5 @@
 import styles from '../../styles/contact.module.css'
-import buttonStyles from '../../styles/contact.module.scss'
+// import buttonStyles from '../../styles/contact.module.scss'
 import 'font-awesome/css/font-awesome.min.css';
 import { useSelector } from 'react-redux';
 import colors from '../utils/globals';
@@ -14,7 +14,6 @@ const contact = () => {
     const [subject, setSubject] = useState('')
     const [message, setMessage] = useState('')
     const [submitted, setSubmitted] = useState(false)
-    const [animation, setAnimation] = useState(`${buttonStyles.subButton}`)
 
     const handleSubmit = (e: Event) => {
         e.preventDefault()
@@ -26,9 +25,6 @@ const contact = () => {
             subject,
             message
         }
-
-        let temp = animation
-        setAnimation(animation + ` ${buttonStyles.loading}`)
     
         fetch('/api/contact', {
             method: 'POST',
@@ -44,12 +40,6 @@ const contact = () => {
                 setSubject('')
                 setMessage('')
                 setSubmitted(false)
-                setTimeout(() => {
-                    setAnimation(temp + ` ${buttonStyles.ready}`)
-                }, 1000);
-                setTimeout(() => {
-                    setAnimation(temp)
-                }, 3000); 
             }
         })
     }
@@ -102,9 +92,11 @@ const contact = () => {
                     <label style={{ paddingRight: '48px' }}>Message</label>
                     <textarea onChange={(e) => { setMessage(e.target.value) }} value={message} />
                 </div>
-                <div className={buttonStyles.subBody}>
-                    <button type="submit" className={animation}>
-                        Submit
+                <div style={{width: 90, marginLeft: 'auto', marginRight: 10}}>
+                    <button type="submit">
+                        <div style={{color: 'white', backgroundColor: '#5585ff', borderRadius: 10, width: 90, paddingTop: 5, paddingBottom: 5, paddingLeft: 20, paddingRight: 20}}>
+                            Submit
+                        </div>
                     </button>
                 </div>
             </form>

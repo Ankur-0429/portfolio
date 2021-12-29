@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-hook/window-size": "^3.0.7",
+    "aos": "^2.3.4",
     "dotenv": "^10.0.0",
     "font-awesome": "^4.7.0",
     "next": "^12.0.0",
@@ -28,6 +29,7 @@
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.4",
     "@types/react": "17.0.30",
     "@types/styled-components": "^5.1.15",
     "autoprefixer": "^10.3.7",

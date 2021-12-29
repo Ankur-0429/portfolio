@@ -8,6 +8,7 @@ import data from '../component/Project/data'
 import Projects from '../component/Project/Projects';
 import Person from '../component/Person/Person';
 import Contact from '../component/contact/Contact';
+import Mobile from '../component/mobile/Mobile'
 
 const Home: NextPage = () => {
 
@@ -19,6 +20,7 @@ const Home: NextPage = () => {
       <div style={{ fontFamily: 'Roboto' }}>
         <Header />
         <Person />
+        <Mobile />
         <Projects data={data} />
         <Contact />
       </div>
