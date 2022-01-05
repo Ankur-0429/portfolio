@@ -20,16 +20,28 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
 
           <link rel="icon" href="/favicon.ico" />
-          
-          <meta name="keywords" content="Ankur Ahir Software Developer DevOps Engineer Portfolio Site" />
-          <meta name="author" content="Ankur Ahir" />
-          <meta property="og:title" content="Portfolio Website" />
-          <meta property="og:type" content="website" />
+
+          {/* HTML Meta Tags */}
+          <title>Portfolio Website</title>
+          <meta name="description" content="DevOps developer" />
+
+          {/* Google / Search Engine Tags */}
+          <meta itemProp="name" content="Portfolio Website" />
+          <meta itemProp="description" content="DevOps developer" />
+          <meta itemProp="image" content="http://i.imgur.com/gk31YMY.png" />
+
+          {/* Facebook Meta Tags */}
           <meta property="og:url" content="https://portfolio-ankur-0429.vercel.app" />
-          <meta property="og:image" content="https://i.imgur.com/gk31YMY.png" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Portfolio Website" />
           <meta property="og:description" content="DevOps developer" />
-          <meta name="theme-color" content="#FF0000" />
-          <meta name="twitter:card" content="summary_large_image"></meta>
+          <meta property="og:image" content="http://i.imgur.com/gk31YMY.png" />
+
+          {/* Twitter Meta Tags */}
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:title" content="Portfolio Website" />
+          <meta name="twitter:description" content="DevOps developer" />
+          <meta name="twitter:image" content="http://i.imgur.com/gk31YMY.png" />
 
           <noscript>
             {/*
