@@ -40,7 +40,7 @@ class MyDocument extends Document {
           <meta property="og:image" content="http://i.imgur.com/gk31YMY.png" />
 
           {/* Twitter Meta Tags */}
-          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:card" content="summary" />
           <meta name="twitter:title" content="Portfolio Website" />
           <meta name="twitter:description" content="DevOps developer" />
           <meta name="twitter:image" content="http://i.imgur.com/gk31YMY.png" />
