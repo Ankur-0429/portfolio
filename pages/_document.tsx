@@ -20,6 +20,15 @@ class MyDocument extends Document {
           <meta charSet="UTF-8" />
 
           <link rel="icon" href="/favicon.ico" />
+          <meta name="description" content="Ankur Ahir Portfolio Website" />
+          <meta name="keywords" content="Ankur Ahir Software Developer DevOps Engineer Portfolio Site" />
+          <meta name="title" property="og:title" content="Ankur Ahir DevOps Engineer Portfolio Website" />
+          <meta property="og:type" content="Website" />
+          <meta name="image" property="og:image" content="https://imgur.com/gk31YMY" />
+          <meta property="og:url" content="https://portfolio-ankur-0429.vercel.app/" />
+          <meta name="description" property="og:description" content="DevOps Engineer Portfolio Website for Ankur Ahir" />
+          <meta name="author" content="Ankur Ahir" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
 
           <noscript>
             {/*
