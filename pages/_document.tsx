@@ -26,9 +26,11 @@ class MyDocument extends Document {
           <meta name="description" content="DevOps developer" />
 
           {/* Google / Search Engine Tags */}
-          <meta itemProp="name" content="Portfolio Website" />
-          <meta itemProp="description" content="DevOps developer" />
+          <meta itemProp="name" content="Portfolio Website by Ankur Ahir" />
+          <meta itemProp="description" content="DevOps developer by Ankur Ahir" />
           <meta itemProp="image" content="http://i.imgur.com/gk31YMY.png" />
+          <meta name="Description" content="Ankur Ahir, DevOps Engineer, Lockheed Martin, Computer Science "></meta>
+          <meta name="robots" content="max-snippet:20, max-image-preview:large"></meta>
 
           {/* Facebook Meta Tags */}
           <meta property="og:url" content="https://portfolio-ankur-0429.vercel.app" />
