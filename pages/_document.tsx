@@ -24,7 +24,7 @@ class MyDocument extends Document {
           <meta name="keywords" content="Ankur Ahir Software Developer DevOps Engineer Portfolio Site" />
           <meta name="title" property="og:title" content="Ankur Ahir DevOps Engineer Portfolio Website" />
           <meta property="og:type" content="Website" />
-          <meta name="image" property="og:image" content="https://imgur.com/gk31YMY" />
+          <meta name="image" property="og:image" content="https://i.imgur.com/gk31YMY.png" />
           <meta property="og:url" content="https://portfolio-ankur-0429.vercel.app/" />
           <meta name="description" property="og:description" content="DevOps Engineer Portfolio Website for Ankur Ahir" />
           <meta name="author" content="Ankur Ahir" />
