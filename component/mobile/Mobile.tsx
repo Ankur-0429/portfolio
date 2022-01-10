@@ -4,6 +4,7 @@ import { Parallax } from 'react-scroll-parallax';
 import colors from '../utils/globals';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
+import Title from '../title';
 
 export default function Navbar() {
 
@@ -19,19 +20,7 @@ export default function Navbar() {
         setColor(theme)
     }, [theme])
     return (<>
-        <div style={{ width: '100%', marginBottom: '30px' }} className={styles.title}>
-            <Parallax x={[0, 0]} y={[0, 0]} tagInner="h1">
-                <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'<h1>'}</h1>
-                <h1 id="projects">
-                    RecycleMe
-                </h1>
-                <div style={{ width: '15%' }}>
-                    <Parallax x={[630, 630]} tagInner="h1">
-                        <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'</h1>'}</h1>
-                    </Parallax>
-                </div>
-            </Parallax>
-        </div>
+        <Title name={"RecycleMe"} />
 
         <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexBasis: '50%', justifyContent: 'space-around', marginBottom: 100, alignItems: 'center' }}>
 
