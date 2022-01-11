@@ -10,6 +10,5 @@ export default function Languages({ data }: any) {
                 return <Language image={e.image} />
             })}
         </div>
-
     </>)
 }

@@ -32,6 +32,10 @@
     margin-top: 0.5rem;
 }
 
+.line {
+    width: 32%;
+}
+
 .iconText {
     display: flex;
     align-items: center;
@@ -153,5 +157,8 @@
     }
     .formGroup label {
         padding-right: 55px;
+    }
+    .line {
+        width: 100%;
     }
 }
