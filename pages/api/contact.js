@@ -26,7 +26,7 @@ export default async (req, res) => {
   });
 
   const mailData = {
-    from: process.env.USER,
+    from: req.body.email,
     to: process.env.USER,
     subject: req.body.subject,
     text: req.body.message + " | Sent from: " + req.body.email,
