@@ -7,7 +7,7 @@ import image from '../../public/logoSmall.jpg'
 export default function Navbar() {
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="home">
         <div className={styles.logo}>
             <Image src={image} alt="logo"/>
         </div>

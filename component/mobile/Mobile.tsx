@@ -1,6 +1,4 @@
 import Image from 'next/image'
-import styles from '../../styles/project.module.css'
-import { Parallax } from 'react-scroll-parallax';
 import colors from '../utils/globals';
 import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
@@ -20,7 +18,9 @@ export default function Navbar() {
         setColor(theme)
     }, [theme])
     return (<>
-        <Title name={"RecycleMe"} />
+        <div id="projects">
+            <Title name={"RecycleMe ♽"} />
+        </div>
 
         <div data-aos="fade-up" data-aos-delay="200" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', flexBasis: '50%', justifyContent: 'space-around', marginBottom: 100, alignItems: 'center' }}>
 

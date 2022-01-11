@@ -4,10 +4,10 @@ import Language from './Language'
 
 export default function Languages({ data }: any) {
     return (<>
-        <Title name={"Toolbelt"} />
+        <Title name={"Toolbelt 🧰"} />
         <div className={styles.container} style={{padding: 50}}>
-            {data.map((e: any) => {
-                return <Language image={e.image} />
+            {data.map((e: any, index: any) => {
+                return <Language key={index} image={e.image} />
             })}
         </div>
     </>)

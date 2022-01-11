@@ -8,6 +8,7 @@
 
 .handWritten {
     font-family: 'Caveat'; 
+    font-weight: 700;
     padding-bottom: '0px';
 }
 
@@ -45,11 +46,11 @@
     justify-content: space-around;
     align-items: center;
     overflow: hidden; 
+    margin-bottom: 200px;
 }
 
 .name {
-    font-size: 20px;
-    margin-bottom: 5px;
+    font-family: 'Trocchi', Times, serif;
 }
 
 .image {
@@ -66,6 +67,9 @@
 @media screen and (max-width: 750px) {
     .title {
         font-size: 3rem;
+    }
+    .name {
+        font-size: 40px;
     }
   }
 

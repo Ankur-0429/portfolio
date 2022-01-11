@@ -22,7 +22,6 @@ class MyDocument extends Document {
           <link rel="icon" href="/favicon.ico" />
 
           {/* HTML Meta Tags */}
-          <title>Portfolio Website</title>
           <meta name="description" content="DevOps developer" />
 
           {/* Google / Search Engine Tags */}
@@ -63,6 +62,10 @@ class MyDocument extends Document {
           />
           <link
             href="https://fonts.googleapis.com/css2?family=Caveat&family=Shadows+Into+Light&display=swap"
+            rel="stylesheet"
+          />
+          <link 
+            href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" 
             rel="stylesheet"
           />
         </Head>

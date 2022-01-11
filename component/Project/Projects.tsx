@@ -1,12 +1,11 @@
 import Project from "./Project"
 import styles from '../../styles/project.module.css'
-import { Parallax } from 'react-scroll-parallax';
 import Title from "../title";
 
 const projects = ({ data }: any) => {
     return (<>
 
-        <Title name={"Projects"} />
+        <Title name={"Projects 📈"} />
         
         <div className={styles.container}>
             {data.map((e: any) => {

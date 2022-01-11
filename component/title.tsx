@@ -6,11 +6,11 @@ const Title = ({name}:any) => {
         <div style={{ width: '100%', marginBottom: '30px' }} className={styles.title}>
             <Parallax x={[0,0]} y={[0, 0]} tagInner="h1">
                 <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'<h1>'}</h1>
-                <h1 id="projects">
+                <h1 className={styles.name}>
                     {name}
                 </h1>
                 <div style={{width: '15%'}}>
-                    <Parallax x={[630, 630]} tagInner="h1">
+                    <Parallax x={[590, 590]} tagInner="h1">
                         <h1 className={styles.handWritten} style={{ fontSize: '1rem' }}>{'</h1>'}</h1>
                     </Parallax>
                 </div>

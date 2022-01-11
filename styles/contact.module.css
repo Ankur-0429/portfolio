@@ -9,6 +9,10 @@
     margin: 10px;
 }
 
+.main {
+    margin-bottom: 100px;
+}
+
 .form {
     flex: 0 1 60%;
 }
