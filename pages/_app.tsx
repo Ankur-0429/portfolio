@@ -13,7 +13,7 @@ import { useEffect } from 'react'
 
 const store = createStore(rootReducer)
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps }: any) {
 
   useEffect(() => {
     // here you can add your aos options
