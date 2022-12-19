@@ -8,11 +8,11 @@ import styles from "../styles/main.module.css"
 
 const Main = () => {
   return (
-    <div id="home" className="w-full h-screen text-center mb-36 md:mb-0" style={{backgroundColor: "#FAF9F6"}}>
+    <div id="home" className="w-full h-screen text-center mb-36 md:mb-0" style={{ backgroundColor: "#FAF9F6" }}>
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <h1 className="py-4 text-gray-700">
-            Hi, I&#39;m <span className="text-[#5651e5]"> Ankur</span>,
+            Hi, I&#39;m <span className="text-[#5651e5]"> <Link href="/video">Ankur </Link></span>,
           </h1>
           <h1 className="flex flex-row justify-center py-2 text-gray-700">
             <TypeWriter /> Developer
