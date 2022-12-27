@@ -142,6 +142,7 @@ const Contact = () => {
                       type="text"
                       name="name"
                       value={name}
+                      required
                       onChange={(e) => setName(e.target.value)}
                     />
                   </div>
@@ -151,8 +152,9 @@ const Contact = () => {
                     </label>
                     <input
                       className="border-2 rounded-lg p-3 flex border-gray-300"
-                      type="text"
+                      type="tel"
                       name="phone"
+                      required
                       value={phone}
                       onChange={(e) => setPhone(e.target.value)}
                     />
@@ -163,6 +165,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="email"
+                    required
                     name="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
@@ -173,6 +176,7 @@ const Contact = () => {
                   <input
                     className="border-2 rounded-lg p-3 flex border-gray-300"
                     type="text"
+                    required
                     name="subject"
                     value={subject}
                     onChange={(e) => setSubject(e.target.value)}
@@ -184,6 +188,7 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray-300"
                     rows="10"
                     name="message"
+                    required
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}></textarea>
                 </div>
