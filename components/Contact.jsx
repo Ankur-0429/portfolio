@@ -73,7 +73,6 @@ const Contact = () => {
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Contact
         </p>
-        <h2 className="py-4">Let&#39;s Get In Touch</h2>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-[22rem] shadow-xl shadow-gray-400 rounded-xl p-4">
@@ -83,12 +82,12 @@ const Contact = () => {
                 <p>DevOps Developer</p>
               </div>
               <div>
-                <p className="uppercase pt-8">Connect With Me</p>
                 <div className="flex items-center justify-between py-4">
                   <a
                     href="https://www.linkedin.com/in/ankur-ahir-93b041211/"
                     target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaLinkedinIn />
                     </div>
@@ -96,7 +95,8 @@ const Contact = () => {
                   <a
                     href="https://github.com/Ankur-0429"
                     target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaGithub />
                     </div>
@@ -105,7 +105,8 @@ const Contact = () => {
                   <a
                     href="https://www.instagram.com/ankur_ahir88/"
                     target="_blank"
-                    rel="noreferrer">
+                    rel="noreferrer"
+                  >
                     <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                       <FaInstagram />
                     </div>
@@ -124,7 +125,8 @@ const Contact = () => {
                 text="ahir.ankur0429@gmail.com"
                 onCopy={() => {
                   setIfCopy(true);
-                }}>
+                }}
+              >
                 <button className="w-full py-3 mt-5">Copy Email</button>
               </CopyToClipboard>
             </div>
@@ -190,7 +192,8 @@ const Contact = () => {
                     name="message"
                     required
                     value={message}
-                    onChange={(e) => setMessage(e.target.value)}></textarea>
+                    onChange={(e) => setMessage(e.target.value)}
+                  ></textarea>
                 </div>
                 <button className="w-full p-4 text-gray-100 mt-4">
                   {ifload ? (
@@ -220,13 +223,15 @@ const Contact = () => {
         open={open}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         autoHideDuration={6000}
-        onClose={handleClose}>
+        onClose={handleClose}
+      >
         {ifSuccess ? (
           <Alert
             open={open}
             onClose={handleClose}
             severity="success"
-            sx={{ width: "100%" }}>
+            sx={{ width: "100%" }}
+          >
             Email Received!
           </Alert>
         ) : (
@@ -234,7 +239,8 @@ const Contact = () => {
             open={open}
             onClose={handleClose}
             severity="error"
-            sx={{ width: "100%" }}>
+            sx={{ width: "100%" }}
+          >
             An error has occurred. Please try again
           </Alert>
         )}
@@ -243,12 +249,14 @@ const Contact = () => {
         open={ifCopy}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         autoHideDuration={6000}
-        onClose={handleCloseCopy}>
+        onClose={handleCloseCopy}
+      >
         <Alert
           open={ifCopy}
           onClose={handleCloseCopy}
           severity="info"
-          sx={{ width: "100%" }}>
+          sx={{ width: "100%" }}
+        >
           Email has been Copied to Clipboard
         </Alert>
       </Snackbar>
